@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "data modeling for a large modeling which helps to learn more knowledge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "mongodb",
+    "cloudinary",
+    "backend"
+  ],
+  "author": "Sundaram Sharma",
+  "license": "ISC"
+}
