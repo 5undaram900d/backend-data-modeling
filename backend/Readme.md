@@ -81,3 +81,7 @@ use ```npm i -D prettier```
 ## 14. create two file inside main folder (backend)
     - .prettierrc = set all the neccessary condition according to the format of code
     - .prettierignore = in which you wan't any change add inside this file
+
+## 15. Setup Mongo atlas
+    - for database
+    - after that add mongodb connection uri inside .env file
