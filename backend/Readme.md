@@ -85,3 +85,10 @@ use ```npm i -D prettier```
 ## 15. Setup Mongo atlas
     - for database
     - after that add mongodb connection uri inside .env file
+
+## 16. install neccessary package as dependencies
+    - install as dependencies, because these are also important after deploying the server
+    - mongoose = for datatbase related activities
+    - express = for backend
+    - dotenv = for environment variable
+use ```npm i mongoose express dotenv```
