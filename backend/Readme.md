@@ -92,3 +92,10 @@ use ```npm i -D prettier```
     - express = for backend
     - dotenv = for environment variable
 use ```npm i mongoose express dotenv```
+
+## 17. for setup dotenv
+    - for dotenv use as import syntax in place of require
+    - setup is required in package.json file
+    - here change:
+        from: "dev": "nodemon src/index.js"
+        to: "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
