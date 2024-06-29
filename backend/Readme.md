@@ -99,3 +99,10 @@ use ```npm i mongoose express dotenv```
     - here change:
         from: "dev": "nodemon src/index.js"
         to: "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+
+## 18. importation format
+    - many places impotation of file with extension is neccesary to avoid error.
+
+## 19. change in .env file
+    - when you change inside .env file then restarting takes place
+    - it will not restart automatic by the help of nodemon
