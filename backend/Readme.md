@@ -69,3 +69,15 @@ by start easily as command
     models = for keeping all models,
     routes = for keeping all routes in a separate folder,
     utils = for store utilities, ehich are use for again & again
+
+## 13. install prettier
+    - to avoid conflict in production based code in the team,
+    - otherwise lots of error comes when merging the code,
+    - show prettier used for the formatting the code,
+    - it install as devDependency
+    - because it has no need after deploy the code in server
+use ```npm i -D prettier```
+
+## 14. create two file inside main folder (backend)
+    - .prettierrc = set all the neccessary condition according to the format of code
+    - .prettierignore = in which you wan't any change add inside this file
