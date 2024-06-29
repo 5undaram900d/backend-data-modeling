@@ -55,9 +55,17 @@ for as dev_dependency:
     and automatic file created such as package-lock.json, 
     folder as node_modules: which has all info about the install modules
 
-## 11 change in package.json
+## 11. change in package.json
     from=> "test": "echo \"Error: no test specified\" && exit 1"
     to=> "dev": "nodemon src/index.js"
 
 by start easily as command
 ```npm run dev```
+
+## 12. create essential folders inside src
+    controllers = for setup all controllers inside it,
+    db = for code about the database,
+    middlewares = use checks between the cummunication the server,
+    models = for keeping all models,
+    routes = for keeping all routes in a separate folder,
+    utils = for store utilities, ehich are use for again & again
