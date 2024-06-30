@@ -117,3 +117,8 @@ use ```npm i mongoose express dotenv```
     1. redirection responces (300 - 399)
     1. client responces (400 - 499)
     1. server error responces (500 - 599)
+
+## 22. install some module
+    ~ mongoose-aggregate-paginate-v2 => for handle big task in mongoDB
+    ~ bcrypt => A library to help you hash password
+    ~ jwt (JsonWebToken) => is a bearer token
