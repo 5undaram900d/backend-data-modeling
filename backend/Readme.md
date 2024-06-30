@@ -106,3 +106,14 @@ use ```npm i mongoose express dotenv```
 ## 19. change in .env file
     - when you change inside .env file then restarting takes place
     - it will not restart automatic by the help of nodemon
+
+## 20. import cors, cookie-parser
+    use middleware for taking less resource from computing power
+<img width="350" alt="LOGO" src="https://media.geeksforgeeks.org/wp-content/uploads/20211007175759/MiddlewareChaining.png">
+
+## 21. HTTP response status codes
+    1. informational responces (100 - 199)
+    1. successful responces (200 - 299)
+    1. redirection responces (300 - 399)
+    1. client responces (400 - 499)
+    1. server error responces (500 - 599)
