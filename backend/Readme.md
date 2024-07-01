@@ -113,10 +113,10 @@ use ```npm i mongoose express dotenv```
 
 ## 21. HTTP response status codes
     1. informational responces (100 - 199)
-    1. successful responces (200 - 299)
-    1. redirection responces (300 - 399)
-    1. client responces (400 - 499)
-    1. server error responces (500 - 599)
+    2. successful responces (200 - 299)
+    3. redirection responces (300 - 399)
+    4. client responces (400 - 499)
+    5. server error responces (500 - 599)
 
 ## 22. install some module
     ~ mongoose-aggregate-paginate-v2 => for handle big task in mongoDB

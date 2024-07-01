@@ -1,0 +1,62 @@
+                    ------------ HTTP ------------
+
+What are HTTP Headers -------------------
+    metadata -----> key-value sent along with request & response
+
+    -> caching, authentication, manage state
+
+    @ Request Headers  --> from Client
+    @ Response Headers  --> from Server
+    @ Representational Headers  --> encoding / compression
+    @ Payload Headers  --> data
+
+Most Comman Headers --------------------
+    Accept: application/json
+    User-Agent
+    Authorization
+    Content-Type
+    Cookie
+    Cache-Control
+
+CORS ----------------------------------
+    Access-Control-Allow-Origin
+    Access-Control-Allow-Credentials
+    Access-Control-Allow-Method
+
+Security ------------------------------
+    Cross-Origin-Embedders-Policy
+    Cross-Origin-Opener-Policy
+    Content-Security-Policy
+    X-XSS-Protection
+
+HTTP Methods -------------------------
+    Basic set of operations thst can be used to interact with Server
+    .GET : retrieve & resource
+    .HEAD : No message body (response headers only)
+    .OPTIONS : what operations are applicable
+    .TRACE : loopback test (get some data)
+    .DELETE : remove a resource
+    .PUT : replace a resource
+    .POST : interact with resource (mostly add)
+    .PATCH : change part of a resource
+
+HTTP Status Code ----------------------
+    ~ 1xx       Informational
+    ~ 2xx       Success
+    ~ 3xx       Redirection
+    ~ 4xx       Client Error
+    ~ 5xx       Server Error
+
+    100     Continue
+    102     Processing
+    200     Ok
+    201     created
+    202     accepted
+    307     temporary redirect
+    308     permanent redirect
+    400     Bad request
+    401     Unautherization
+    402     Payment required
+    404     NOT Found
+    500     Internal Server Error
+    504     Gateway time out
