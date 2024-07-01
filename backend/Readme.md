@@ -122,3 +122,7 @@ use ```npm i mongoose express dotenv```
     ~ mongoose-aggregate-paginate-v2 => for handle big task in mongoDB
     ~ bcrypt => A library to help you hash password
     ~ jwt (JsonWebToken) => is a bearer token
+
+## 23. install multer & cloudinary
+    multer => use as a middleware to save your file inside thestorage or memory, use if any error occurs before uploading file, then keep save the destination of file.
+    cloudinary => after that upload file into cloudinary, we can also directory upload our file into cloudinary without using middleware.
