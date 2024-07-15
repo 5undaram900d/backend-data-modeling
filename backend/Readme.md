@@ -126,3 +126,8 @@ use ```npm i mongoose express dotenv```
 ## 23. install multer & cloudinary
     multer => use as a middleware to save your file inside thestorage or memory, use if any error occurs before uploading file, then keep save the destination of file.
     cloudinary => after that upload file into cloudinary, we can also directory upload our file into cloudinary without using middleware.
+
+## 24. Error Resolve by UTF-8
+    So here one error comes as Invalid syntax in app.js,
+    which I solve by incoding & save file app.js into UTF-8 from UTF-16
+    after that again reopen the app.js by UTF-8
