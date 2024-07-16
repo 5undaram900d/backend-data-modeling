@@ -21,16 +21,22 @@ const registerUser = asyncHandler( async (req, res) => {
     }
 
     /* 3. Check if user already exists in database */
-    const existedUser = User.findOne({ $or: [{username}, {email}] })
+    const existedUser = await User.findOne({ $or: [{username}, {email}] })
     console.log(existedUser)
     if (existedUser) {
         throw new ApiError(409, "User with email or username already exists");
     }
+    console.log(req.files);
 
     /* 4. check for images, avatar */
     const avatarLocalPath = req.files?.avatar[0]?.path;
     console.log(avatarLocalPath)
-    const coverImageLocalPath = req.files?.coverImage[0];
+
+    // const coverImageLocalPath = req.files?.coverImage[0]?.path;
+    let coverImageLocalPath;
+    if (req.files && Array.isArray(req.files.coverImage) && req.files.coverImage.length > 0) {
+        coverImageLocalPath = req.files.coverImage[0].path
+    }
     console.log(coverImageLocalPath)
 
     /* 5. upload them to cloudinary, (check required for avatar) */
@@ -39,7 +45,9 @@ const registerUser = asyncHandler( async (req, res) => {
     }
 
     const avatar = await uploadOnCloudinary(avatarLocalPath)
+    console.log(avatar);
     const coverImage = await uploadOnCloudinary(coverImageLocalPath)
+    console.log(coverImage);
 
     if (!avatar) {
         throw new ApiError(400, "Avatar image is required, On uploading error");
@@ -56,7 +64,7 @@ const registerUser = asyncHandler( async (req, res) => {
     })
     
     /* 7. remove password & refresh token field from response */
-    const createdUser = User.findById(user._id).select( "-password -refreshToken" )  // which field you not want to store
+    const createdUser = await User.findById(user._id).select( "-password -refreshToken" )  // which field you not want to store
 
     /* 8. check for user creation */
     if (!createdUser) {
