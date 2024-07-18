@@ -75,7 +75,7 @@ userSchema.methods.generateAccessToken = function() {
     )
 }
 
-/* REFRESH_TOKEN are long live */
+/* REFRESH_TOKEN are long live & it saved on database, when we required then we can get by refresh */
 userSchema.methods.generateRefreshToken = function(){
     return jwt.sign(
         {
