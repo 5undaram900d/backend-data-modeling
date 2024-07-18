@@ -48,17 +48,19 @@ const userSchema = new Schema({
 
 /* .pre is a hook, used for just uploading a file */
 userSchema.pre("save", async function (next) {
-    if(this.isModified("password"))
+    if(!this.isModified("password"))
         return next();
     this.password = await bcrypt.hash(this.password, 10)
     next()
 })
 
-userSchema.methods.isPasswordCorrect = async function(){
+userSchema.methods.isPasswordCorrect = async function(password){
+    console.log(password, " ", this.password);
     return await bcrypt.compare(password, this.password);
 }
 
-userSchema.methods.generateAccessToken = function(){
+/* ACCESS_TOKEN are short live */
+userSchema.methods.generateAccessToken = function() {
     return jwt.sign(
         {
             _id: this._id,
@@ -73,6 +75,7 @@ userSchema.methods.generateAccessToken = function(){
     )
 }
 
+/* REFRESH_TOKEN are long live */
 userSchema.methods.generateRefreshToken = function(){
     return jwt.sign(
         {
