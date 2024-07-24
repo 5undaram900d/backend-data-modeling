@@ -131,3 +131,6 @@ use ```npm i mongoose express dotenv```
     So here one error comes as Invalid syntax in app.js,
     which I solve by incoding & save file app.js into UTF-8 from UTF-16
     after that again reopen the app.js by UTF-8
+
+## 25. Aggregation Pipeline
+    Aggregation pipelines provide better performance and usability than map-reduce. You can rewrite map-reduce operations using aggregation pipeline stages, such as $group , $merge , and others. For map-reduce operations that require custom functionality, you can use the $accumulator and $function aggregation operators.
