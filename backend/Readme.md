@@ -5,7 +5,7 @@
         => By this package.json file created
 
 ### Notes:  How to add a Link in Readme.md file 
-- [Model Link]()
+- [Model Link](www.google.com)
 
 ### Notes: How to add a image in Readme.md file
 <img width="100" alt="LOGO" src="https://i.pngimg.me/thumb/f/720/456c6c08f2.jpg">
@@ -51,7 +51,7 @@ for as dev_dependency:
         'OR'
 ```npm i -D nodemon```
 
-## 10. after run ```npm i -D nodemon``` nodemon install as devDepencies
+## 10. after run ```npm i -D nodemon``` nodemon install as devDependencies
     and automatic file created such as package-lock.json, 
     folder as node_modules: which has all info about the install modules
 
@@ -68,7 +68,7 @@ by start easily as command
     middlewares = use checks between the cummunication the server,
     models = for keeping all models,
     routes = for keeping all routes in a separate folder,
-    utils = for store utilities, ehich are use for again & again
+    utils = for store utilities, which are use for again & again
 
 ## 13. install prettier
     - to avoid conflict in production based code in the team,
@@ -101,7 +101,7 @@ use ```npm i mongoose express dotenv```
         to: "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
 
 ## 18. importation format
-    - many places impotation of file with extension is neccesary to avoid error.
+    - many places importation of file with extension is neccesary to avoid error.
 
 ## 19. change in .env file
     - when you change inside .env file then restarting takes place
@@ -124,7 +124,7 @@ use ```npm i mongoose express dotenv```
     ~ jwt (JsonWebToken) => is a bearer token
 
 ## 23. install multer & cloudinary
-    multer => use as a middleware to save your file inside thestorage or memory, use if any error occurs before uploading file, then keep save the destination of file.
+    multer => use as a middleware to save your file inside the storage or memory, use if any error occurs before uploading file, then keep save the destination of file.
     cloudinary => after that upload file into cloudinary, we can also directory upload our file into cloudinary without using middleware.
 
 ## 24. Error Resolve by UTF-8
